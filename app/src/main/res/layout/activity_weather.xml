@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="25dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/sunny"
+            android:layout_width="50sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/art_clear" />
+
+        <TextView
+            android:id="@+id/weahter"
+            android:layout_width="190dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="70dp"
+            android:text="Weather App"
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="304dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <ImageView
+            android:id="@+id/clouds"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/art_rain" />
+
+        <TextView
+            android:id="@+id/textCloud"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/clouds"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="17dp"
+            android:text="Cloudy"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            android:layout_width="187dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_above="@id/textCelc"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="5dp"
+                android:text="Today,April 03"
+                android:textColor="#FFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textCelc2"
+                android:layout_width="150dp"
+                android:layout_height="81dp"
+                android:layout_above="@id/textCelc"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="15dp"
+                android:text="26"
+                android:textColor="#FFFF"
+                android:textSize="70dp" />
+
+            <TextView
+                android:id="@+id/textCelc"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_below="@id/clouds"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="17dp"
+                android:text="20"
+                android:textColor="#FFFF"
+                android:textSize="40dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginBottom="120dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/art_clouds" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="150sp"
+                    android:text="12:00"
+                    android:textColor="#FFFF"
+                    android:textSize="50sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/art_clouds" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="150sp"
+                    android:text="12:00"
+                    android:textColor="#FFFF"
+                    android:textSize="50sp" />
+            </RelativeLayout>
+        </TableLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
