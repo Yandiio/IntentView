@@ -2,18 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
 
+    <TextView
+        android:id="@+id/explicit"
+        android:text="Explicit Content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:layout_width="match_parent"/>
 
     <Button
         android:id="@+id/btn_Red"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="10dp"
-        android:text="Red And Blue" />
+        android:text="Explicit Intent Stuffs" />
 
     <Button
         android:id="@+id/btn_weather"
@@ -23,6 +32,15 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="10dp"
         android:text="Weather App" />
+
+    <TextView
+        android:id="@+id/implicit"
+        android:text="Implicit Content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:layout_width="match_parent"/>
 
     <Button
         android:id="@+id/btn_call"
